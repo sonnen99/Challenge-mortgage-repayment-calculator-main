@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/html-css-bootstrap-js-jquery-solution-66gODMJTH1)
 - Live Site URL: [Live site URL](https://sonnen99.github.io/Challenge-mortgage-repayment-calculator-main/)
 
 ## My process
