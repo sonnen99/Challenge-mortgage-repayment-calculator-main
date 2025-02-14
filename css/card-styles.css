@@ -1,0 +1,117 @@
+/* Cards */
+
+.row {
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    border: none;
+    color: hsl(200, 24%, 40%);
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+.left-bg {
+    background-color: white;
+    border-radius: 0px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.left-card {
+    border-radius: 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    width: 100%;
+}
+
+.left-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-flex;
+    color: #123040;
+    padding: 6px 12px;
+}
+
+.right-bg {
+    background-color: white;
+    border-radius: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.right-card {
+    background-color: #123040;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 0;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.right-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 6px 12px;
+}
+
+.empty-img {
+    width: 40%;
+    margin: 10px auto;
+}
+
+.result-card {
+    background-color: #0E2431;
+    box-shadow: 0 -2px 0 #D9DB30;
+    margin: 40px 10px; 
+    text-align: left;
+    display: none;
+}
+
+.result {
+    font-size: 30px;
+    color: #D9DB30;
+    padding: 10px;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 6px 12px;
+}
+
+@media (max-width: 670px) {
+
+    .left-card {
+        border-radius: 0%;
+        min-width: 100%;
+    }
+
+    .right-card {
+        border-radius: 0%;
+        padding: 40px 20px;
+        min-width: 100%;
+    }
+
+    .empty-img {
+        width: 60%;
+    }
+
+}

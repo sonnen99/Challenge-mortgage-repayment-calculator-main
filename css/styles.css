@@ -1,0 +1,39 @@
+body {
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 16px;
+    background-color: #E3F4FC;
+    text-align: center;
+    padding: 5%;
+}
+
+h2 {
+    color: #123040;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+p {
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+.p-dark {
+    color: hsl(203, 41%, 72%);
+    margin: 0 10px;
+}
+
+img {
+    margin-right: 10px;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.attribution {
+    color: black;
+    margin-top: 10px;
+}

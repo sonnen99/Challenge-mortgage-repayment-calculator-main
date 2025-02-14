@@ -1,0 +1,107 @@
+/* Text Inputs */
+
+input {
+    border: solid;
+    border-color: hsl(200, 24%, 40%);
+    border-radius: 10px;
+    border-width: 1px;
+    caret-color: #123040;
+    color: #123040;
+    font-weight: 700;
+    padding: 8px;
+}
+
+input:focus {
+    border-color: #D9DB30;
+    outline: none;
+}
+
+input:hover {
+    border-color: #123040;
+    border-width: 1.5px;
+}
+
+.placeholders {
+    align-content: center;
+    background-color: #E3F4FC;
+    color: hsl(200, 24%, 40%);
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    margin: 1px;
+    height: 40px;
+}
+
+.placeholder-focus {
+    background-color: #D9DB30;
+    color: #123040;
+}
+
+.error{
+    border-color: #D73329;
+}
+
+.error-placeholder {
+    background-color: #D73329;
+    color: white;
+}
+
+.error-text{
+    color: #D73329;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
+
+/* Amount */
+
+.amount-box {
+    display: flex;
+    justify-content: left;
+}
+
+.amount-placeholder {
+    min-width: 40px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.amount {
+    padding-left: 50px;
+    width: 100%;
+}
+
+
+/* Years */
+
+.input-box {
+    display: flex;
+    justify-content: right;
+    min-width: 110px;
+}
+
+.years-placeholder {
+    min-width: 60px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.years {
+    padding-right: 70px;
+    width: 100%;
+}
+
+
+/* Rate */
+
+.rate-placeholder {
+    min-width: 40px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.rate {
+    padding-right: 50px;
+    width: 100%;
+}

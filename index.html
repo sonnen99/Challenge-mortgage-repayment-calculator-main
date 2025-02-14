@@ -1,61 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/card-styles.css">
+  <link rel="stylesheet" href="css/input-styles.css">
+  <link rel="stylesheet" href="css/button-styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Mortgage repayment calculator</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Mortgage Calculator
-  Clear All
+  <div class="row">
 
-  Mortgage Amount
+    <div class="col col-xs-12 left-bg">
+      <div class="card left-card">
+        <div class="card-body">
+          <div class="row d-flex header-row">
+            <div class="col left-card-title">
+              Mortgage Calculator
+            </div>
+            <button class="col col-md-3 btn clear-btn">Clear All</button>
+          </div>
 
-  Mortgage Term
+          <div class="col">
+            <p>
+              Mortgage Amount
+            </p>
+            <div class="amount-box">
+              <p class="placeholders amount-placeholder">$</p>
+              <input class="amount" type="text">
+            </div>
+            <div class="error-text-amount error-text"></div>
+          </div>
 
-  Interest Rate
+          <div class="row">
+            <div class="col ">
+              <p>
+                Mortgage Term
+              </p>
+              <div class="input-box">
+                <p class="placeholders years-placeholder">years</p>
+                <input class="years" type="text">
+              </div>
+              <div class="error-text-years error-text"></div>
+            </div>
+            <div class="col">
+              <p>
+                Interest Rate
+              </p>
+              <div class="input-box">
+                <p class="placeholders rate-placeholder">%</p>
+                <input class="rate" type="text">
+              </div>
+              <div class="error-text-rate error-text"></div>
+            </div>
+          </div>
 
-  Mortgage Type
-  Repayment
-  Interest Only
+          <p>
+            Mortgage Type
+          </p>
 
-  Calculate Repayments
+          <div class="radio Repayment">
+            <input class="radio-button" type="radio" id="Repayment" value="Repayment" name="Mortgage">
+            <label for="Repayment">
+              <h2>Repayment</h2>
+            </label>
+          </div>
 
-  <!-- Empty results start -->
+          <div class="radio Interest">
+            <input class="radio-button" type="radio" id="Interest" value="Interest" name="Mortgage">
+            <label for="Interest">
+              <h2>Interest Only</h2>
+            </label>
+          </div>
 
-  Results shown here
+          <div class="error-text-radio error-text"></div>
 
-  Complete the form and click “calculate repayments” to see what 
-  your monthly repayments would be.
+          <button class="btn btn-calculate">
+            <img src="assets/images/icon-calculator.svg" alt="calculator-icon">
+            <h2>
+              Calculate Repayments
+            </h2>
+          </button>
+        </div>
+      </div>
+    </div>
 
-  <!-- Empty results end -->
+    <div class="col col-xs-12 right-bg">
+      <div class="card right-card">
+        <img class="empty-img" src="assets/images/illustration-empty.svg" alt="Empty">
+        <div class="right-card-title">
+          Results shown here
+        </div>
+        <p class="p-dark p-text">
+          Complete the form and click “calculate repayments” to see what
+          your monthly repayments would be.
+        </p>
 
-  <!-- Completed results start -->
+        <div class="card result-card">
+          <div class="card-body">
+            <p class="p-dark">
+              Your monthly repayments
+            </p>
+            <h1 class="result">
+              Result
+            </h1>
+            <hr>
+            <p class="p-dark">
+              Total you'll repay over the term
+            </p>
+            <div class="total">
+              Total amount
+            </div>
+          </div>
+        </div>
 
-  Your results
+      </div>
+    </div>
 
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
+  </div>
 
-  Your monthly repayments
 
-  Total you'll repay over the term
-
-  <!-- Completed results end -->
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="index.js"></script>
 </body>
+
 </html>

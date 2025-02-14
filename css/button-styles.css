@@ -1,0 +1,65 @@
+/* Buttons */
+
+.radio {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: solid;
+    border-color: hsl(200, 24%, 40%);
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 20px;
+    margin: 5px 0;
+}
+
+.radio:hover {
+    border-color: #D9DB30;
+}
+
+.radio-selected {
+    background-color: rgb(217, 219, 49, 0.2);
+    border-color: #D9DB30;
+}
+
+.radio-button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    border-color: #123040;
+    margin-right: 10px;
+    justify-items: center;
+}
+
+.radio-button:checked {
+    border-color: #D9DB30;
+    background-color: #D9DB30;
+    transform: scale(0.55);
+    outline: max(1px, 0.2em) solid #D9DB30;
+    outline-offset: max(1px, 0.4em);
+}
+
+/* Buttons */
+
+.clear-btn {
+    border: none;
+    text-decoration: underline;
+    justify-content: right;
+    display: flex;
+    font-size: 14px;
+    color: hsl(200, 24%, 40%);
+    font-weight: 500;
+    width: 5rem;
+}
+
+.btn-calculate {
+    background-color: #D9DB30;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+.btn-calculate:hover {
+    background-color: rgb(217, 219, 48, 0.3);
+}
